@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>지뢰찾기 게임</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #282c34;
+      font-family: Arial, sans-serif;
+    }
+
+    .welcome-message {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .button {
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #61dafb;
+      color: #282c34;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .button:hover {
+      background-color: #0b7dda;
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-message">
+    지뢰찾기 게임에 오신 걸 환영합니다.
+  </div>
+  <div class="button-container">
+    <button class="button" onclick="start2DGame()">2차원 지뢰찾기</button>
+    <button class="button" onclick="start3DGame()">3차원 지뢰찾기</button>
+  </div>
+
+  <script>
+    function start2DGame() {
+      // 2차원 지뢰찾기 게임 시작
+      window.location.href = "2차원지뢰찾기.html";
+    }
+
+    function start3DGame() {
+      // 3차원 지뢰찾기 게임 시작
+      window.location.href = "3차원지뢰찾기.html";
+    }
+  </script>
+</body>
+</html>
